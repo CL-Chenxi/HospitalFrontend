@@ -1,0 +1,29 @@
+C:\Users\User\Desktop\My development\Hospital FrontEnd\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\User\Desktop\My development\Hospital FrontEnd\bin\Debug\net8.0\appsettings.json
+C:\Users\User\Desktop\My development\Hospital FrontEnd\bin\Debug\net8.0\Hospital_FrontEnd.staticwebassets.runtime.json
+C:\Users\User\Desktop\My development\Hospital FrontEnd\bin\Debug\net8.0\Hospital_FrontEnd.exe
+C:\Users\User\Desktop\My development\Hospital FrontEnd\bin\Debug\net8.0\Hospital_FrontEnd.deps.json
+C:\Users\User\Desktop\My development\Hospital FrontEnd\bin\Debug\net8.0\Hospital_FrontEnd.runtimeconfig.json
+C:\Users\User\Desktop\My development\Hospital FrontEnd\bin\Debug\net8.0\Hospital_FrontEnd.dll
+C:\Users\User\Desktop\My development\Hospital FrontEnd\bin\Debug\net8.0\Hospital_FrontEnd.pdb
+C:\Users\User\Desktop\My development\Hospital FrontEnd\obj\Debug\net8.0\Hospital FrontEnd.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\My development\Hospital FrontEnd\obj\Debug\net8.0\Hospital FrontEnd.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\My development\Hospital FrontEnd\obj\Debug\net8.0\Hospital FrontEnd.AssemblyInfo.cs
+C:\Users\User\Desktop\My development\Hospital FrontEnd\obj\Debug\net8.0\Hospital FrontEnd.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\My development\Hospital FrontEnd\obj\Debug\net8.0\Hospital_FrontEnd.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\Desktop\My development\Hospital FrontEnd\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\User\Desktop\My development\Hospital FrontEnd\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\User\Desktop\My development\Hospital FrontEnd\obj\Debug\net8.0\staticwebassets\msbuild.Hospital_FrontEnd.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\User\Desktop\My development\Hospital FrontEnd\obj\Debug\net8.0\staticwebassets\msbuild.build.Hospital_FrontEnd.props
+C:\Users\User\Desktop\My development\Hospital FrontEnd\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Hospital_FrontEnd.props
+C:\Users\User\Desktop\My development\Hospital FrontEnd\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Hospital_FrontEnd.props
+C:\Users\User\Desktop\My development\Hospital FrontEnd\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\User\Desktop\My development\Hospital FrontEnd\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+C:\Users\User\Desktop\My development\Hospital FrontEnd\obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
+C:\Users\User\Desktop\My development\Hospital FrontEnd\obj\Debug\net8.0\scopedcss\bundle\Hospital_FrontEnd.styles.css
+C:\Users\User\Desktop\My development\Hospital FrontEnd\obj\Debug\net8.0\scopedcss\projectbundle\Hospital_FrontEnd.bundle.scp.css
+C:\Users\User\Desktop\My development\Hospital FrontEnd\obj\Debug\net8.0\Hospital_FrontEnd.dll
+C:\Users\User\Desktop\My development\Hospital FrontEnd\obj\Debug\net8.0\refint\Hospital_FrontEnd.dll
+C:\Users\User\Desktop\My development\Hospital FrontEnd\obj\Debug\net8.0\Hospital_FrontEnd.pdb
+C:\Users\User\Desktop\My development\Hospital FrontEnd\obj\Debug\net8.0\Hospital FrontEnd.genruntimeconfig.cache
+C:\Users\User\Desktop\My development\Hospital FrontEnd\obj\Debug\net8.0\ref\Hospital_FrontEnd.dll

@@ -1,0 +1,40 @@
+﻿@page "/treatmentplancreate"
+@using HospitalFrontEnd.Data
+@using HospitalFrontEnd.Components
+@inherits TreatmentPlanComponent
+
+
+<h1>Create new treatment plan</h1>
+
+<EditForm Model="@CreateTreatmentPlanForm" OnValidSubmit="Create">
+    <table>
+        <tr><td><label for="patient_id">Patient ID</label></td><td><InputNumber id="patient_id" @bind-Value="CreateTreatmentPlanForm.Patient_Id" /></td></tr>
+        <tr><td><label for="patient_id">Staff ID</label></td><td><InputNumber id="staff_id" @bind-Value="CreateTreatmentPlanForm.Staff_Id" /></td></tr>
+        <tr><td><label for="date">Creation Date</label></td><td>@CreateTreatmentPlanForm.Plan_Date</td></tr>
+        <tr><td><label for="status">Status</label></td><td>@CreateTreatmentPlanForm.Plan_Status</td></tr>
+        <tr><td><label for="cycle">Cycle length</label></td><td><InputNumber id="cycle" @bind-Value="CreateTreatmentPlanForm.Plan_CycleLen"></InputNumber></td></tr>
+        <tr><td><label for="comment">Comment</label></td><td><InputTextArea id="comment" @bind-Value=CreateTreatmentPlanForm.Plan_Observation></InputTextArea> </td></tr>
+    </table>
+    <button class="btn btn-primary" type="submit">Create</button>
+    @if (feedbackCreation.Length != 0)
+    {
+        <p>@feedbackCreation</p>
+    }
+</EditForm>
+
+
+@code {
+    //this code load the status list to diplay within the form
+    private List<string> _statusList;
+
+
+    [Inject]
+    private UtilService ApiService { get; set; }
+
+    //fetch data on page load
+    protected override async Task OnInitializedAsync()
+    {
+        _statusList = await ApiService.GetStatusList();
+    }
+
+}

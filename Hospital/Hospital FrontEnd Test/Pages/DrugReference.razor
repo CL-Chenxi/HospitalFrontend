@@ -1,0 +1,32 @@
+﻿@page "/drugreference"
+@using HospitalFrontEnd.Data
+
+<h3>Drug Reference</h3>
+<table>
+    @if (_drugList != null)
+    {
+        <tr><th>Id</th><th>Name</th><th>Dosage</th><th>Allergies</th></tr>
+        @foreach (var drug in _drugList)
+        {
+            <tr>
+                <td>@drug.Drug_ID</td>
+                <td>@drug.Drug_Name</td>
+                <td>@drug.Drug_Dosage</td>
+                <td>@drug.Drug_AllergyList</td>
+            </tr>
+        }
+    }
+</table>
+
+@code {
+    private List<DrugDto> _drugList;
+    [Inject]
+    private DrugService ApiService { get; set; }
+
+    //fetch data on page load
+    protected override async Task OnInitializedAsync()
+    {
+        _drugList = await ApiService.GetDrugList();
+    }
+
+}

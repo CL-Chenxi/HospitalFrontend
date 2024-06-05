@@ -1,0 +1,15 @@
+C:\Users\User\Desktop\My development\HospitalAPIUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\User\Desktop\My development\HospitalAPIUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\User\Desktop\My development\HospitalAPIUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\User\Desktop\My development\HospitalAPIUnitTest\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+C:\Users\User\Desktop\My development\HospitalAPIUnitTest\bin\Debug\HospitalAPIUnitTest.dll
+C:\Users\User\Desktop\My development\HospitalAPIUnitTest\bin\Debug\HospitalAPIUnitTest.pdb
+C:\Users\User\Desktop\My development\HospitalAPIUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\User\Desktop\My development\HospitalAPIUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\User\Desktop\My development\HospitalAPIUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\User\Desktop\My development\HospitalAPIUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\User\Desktop\My development\HospitalAPIUnitTest\obj\Debug\HospitalAPIUnitTest.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\My development\HospitalAPIUnitTest\obj\Debug\HospitalAPIUnitTest.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\My development\HospitalAPIUnitTest\obj\Debug\HospitalAPIUnitTest.csproj.CopyComplete
+C:\Users\User\Desktop\My development\HospitalAPIUnitTest\obj\Debug\HospitalAPIUnitTest.dll
+C:\Users\User\Desktop\My development\HospitalAPIUnitTest\obj\Debug\HospitalAPIUnitTest.pdb

@@ -1,0 +1,6 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Hospital/Hospital FrontEnd Test/.vs
+/Hospital/Hospital FrontEnd Test/bin/Debug
