@@ -1,0 +1,25 @@
+﻿@page "/addtestresult"
+@using HospitalFrontEnd.Data
+@using HospitalFrontEnd.Components
+@inherits TreatmentPlanComponent
+
+<h1>Add Test Result</h1>
+
+<EditForm Model="@TestResultForm" OnValidSubmit="UpdateTest">
+    <table>
+        <tr><td><label>Test Reference ID</label></td><td><InputNumber @bind-Value="@TestResultForm.Entry_ID" /></td></tr>
+        <tr><td><label>Staff ID</label></td><td><InputNumber @bind-Value="@TestResultForm.Staff_ID" /></td></tr>
+        <tr><td><label>Link</label></td><td><InputText @bind-Value="@TestResultForm.UploadLink" /></td></tr>
+        <tr><td><label>Comment</label></td><td><InputText @bind-Value="@TestResultForm.Comment" /></td></tr>
+    </table>
+    <button class="btn btn-primary" type="submit">Submit</button>
+</EditForm>
+@if (feedbackUpdate.Length > 0)
+{
+    <p>@feedbackUpdate</p>
+}
+
+
+@code {
+
+}

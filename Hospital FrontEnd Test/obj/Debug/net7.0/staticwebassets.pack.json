@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\User\\Desktop\\My development\\Hospital\\Hospital FrontEnd Test\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\HospitalFrontEnd.bundle.scp.css",
+      "PackagePath": "staticwebassets\\HospitalFrontEnd.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\My development\\Hospital\\Hospital FrontEnd Test\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\My development\\Hospital\\Hospital FrontEnd Test\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\My development\\Hospital\\Hospital FrontEnd Test\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\My development\\Hospital\\Hospital FrontEnd Test\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\My development\\Hospital\\Hospital FrontEnd Test\\wwwroot\\floatingMenu.css",
+      "PackagePath": "staticwebassets\\floatingMenu.css"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.HospitalFrontEnd.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.HospitalFrontEnd.props",
+      "PackagePath": "build\\HospitalFrontEnd.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.HospitalFrontEnd.props",
+      "PackagePath": "buildMultiTargeting\\HospitalFrontEnd.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.HospitalFrontEnd.props",
+      "PackagePath": "buildTransitive\\HospitalFrontEnd.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

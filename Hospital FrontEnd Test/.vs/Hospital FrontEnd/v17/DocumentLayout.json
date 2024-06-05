@@ -1,0 +1,256 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Jerome\\source\\repos\\v2\\Hospital FrontEnd\\Hospital FrontEnd\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E14020E1-A1B3-4930-9871-A1C300C20D03}|HospitalFrontEnd.csproj|c:\\users\\jerome\\source\\repos\\v2\\hospital frontend\\hospital frontend\\components\\treatmentplancomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E14020E1-A1B3-4930-9871-A1C300C20D03}|HospitalFrontEnd.csproj|solutionrelative:components\\treatmentplancomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E14020E1-A1B3-4930-9871-A1C300C20D03}|HospitalFrontEnd.csproj|c:\\users\\jerome\\source\\repos\\v2\\hospital frontend\\hospital frontend\\data\\treatmentplanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E14020E1-A1B3-4930-9871-A1C300C20D03}|HospitalFrontEnd.csproj|solutionrelative:data\\treatmentplanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E14020E1-A1B3-4930-9871-A1C300C20D03}|HospitalFrontEnd.csproj|c:\\users\\jerome\\source\\repos\\v2\\hospital frontend\\hospital frontend\\pages\\treatmentplancreate.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E14020E1-A1B3-4930-9871-A1C300C20D03}|HospitalFrontEnd.csproj|solutionrelative:pages\\treatmentplancreate.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E14020E1-A1B3-4930-9871-A1C300C20D03}|HospitalFrontEnd.csproj|c:\\users\\jerome\\source\\repos\\v2\\hospital frontend\\hospital frontend\\pages\\treatmentplanupdate.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E14020E1-A1B3-4930-9871-A1C300C20D03}|HospitalFrontEnd.csproj|solutionrelative:pages\\treatmentplanupdate.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E14020E1-A1B3-4930-9871-A1C300C20D03}|HospitalFrontEnd.csproj|c:\\users\\jerome\\source\\repos\\v2\\hospital frontend\\hospital frontend\\pages\\addtestresult.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E14020E1-A1B3-4930-9871-A1C300C20D03}|HospitalFrontEnd.csproj|solutionrelative:pages\\addtestresult.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E14020E1-A1B3-4930-9871-A1C300C20D03}|HospitalFrontEnd.csproj|c:\\users\\jerome\\source\\repos\\v2\\hospital frontend\\hospital frontend\\pages\\drugreference.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E14020E1-A1B3-4930-9871-A1C300C20D03}|HospitalFrontEnd.csproj|solutionrelative:pages\\drugreference.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E14020E1-A1B3-4930-9871-A1C300C20D03}|HospitalFrontEnd.csproj|c:\\users\\jerome\\source\\repos\\v2\\hospital frontend\\hospital frontend\\data\\drugservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E14020E1-A1B3-4930-9871-A1C300C20D03}|HospitalFrontEnd.csproj|solutionrelative:data\\drugservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E14020E1-A1B3-4930-9871-A1C300C20D03}|HospitalFrontEnd.csproj|c:\\users\\jerome\\source\\repos\\v2\\hospital frontend\\hospital frontend\\data\\staffservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E14020E1-A1B3-4930-9871-A1C300C20D03}|HospitalFrontEnd.csproj|solutionrelative:data\\staffservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E14020E1-A1B3-4930-9871-A1C300C20D03}|HospitalFrontEnd.csproj|c:\\users\\jerome\\source\\repos\\v2\\hospital frontend\\hospital frontend\\pages\\staffdirectory.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E14020E1-A1B3-4930-9871-A1C300C20D03}|HospitalFrontEnd.csproj|solutionrelative:pages\\staffdirectory.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E14020E1-A1B3-4930-9871-A1C300C20D03}|HospitalFrontEnd.csproj|c:\\users\\jerome\\source\\repos\\v2\\hospital frontend\\hospital frontend\\data\\utilservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E14020E1-A1B3-4930-9871-A1C300C20D03}|HospitalFrontEnd.csproj|solutionrelative:data\\utilservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E14020E1-A1B3-4930-9871-A1C300C20D03}|HospitalFrontEnd.csproj|c:\\users\\jerome\\source\\repos\\v2\\hospital frontend\\hospital frontend\\data\\patientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E14020E1-A1B3-4930-9871-A1C300C20D03}|HospitalFrontEnd.csproj|solutionrelative:data\\patientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E14020E1-A1B3-4930-9871-A1C300C20D03}|HospitalFrontEnd.csproj|c:\\users\\jerome\\source\\repos\\v2\\hospital frontend\\hospital frontend\\pages\\patientedit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E14020E1-A1B3-4930-9871-A1C300C20D03}|HospitalFrontEnd.csproj|solutionrelative:pages\\patientedit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E14020E1-A1B3-4930-9871-A1C300C20D03}|HospitalFrontEnd.csproj|c:\\users\\jerome\\source\\repos\\v2\\hospital frontend\\hospital frontend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E14020E1-A1B3-4930-9871-A1C300C20D03}|HospitalFrontEnd.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E14020E1-A1B3-4930-9871-A1C300C20D03}|HospitalFrontEnd.csproj|c:\\users\\jerome\\source\\repos\\v2\\hospital frontend\\hospital frontend\\components\\patientcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E14020E1-A1B3-4930-9871-A1C300C20D03}|HospitalFrontEnd.csproj|solutionrelative:components\\patientcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 213,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DrugService.cs",
+              "DocumentMoniker": "C:\\Users\\Jerome\\source\\repos\\v2\\Hospital FrontEnd\\Hospital FrontEnd\\Data\\DrugService.cs",
+              "RelativeDocumentMoniker": "Data\\DrugService.cs",
+              "ToolTip": "C:\\Users\\Jerome\\source\\repos\\v2\\Hospital FrontEnd\\Hospital FrontEnd\\Data\\DrugService.cs",
+              "RelativeToolTip": "Data\\DrugService.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwBgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T13:54:53.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DrugReference.razor",
+              "DocumentMoniker": "C:\\Users\\Jerome\\source\\repos\\v2\\Hospital FrontEnd\\Hospital FrontEnd\\Pages\\DrugReference.razor",
+              "RelativeDocumentMoniker": "Pages\\DrugReference.razor",
+              "ToolTip": "C:\\Users\\Jerome\\source\\repos\\v2\\Hospital FrontEnd\\Hospital FrontEnd\\Pages\\DrugReference.razor",
+              "RelativeToolTip": "Pages\\DrugReference.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-01T13:51:51.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TreatmentPlanUpdate.razor",
+              "DocumentMoniker": "C:\\Users\\Jerome\\source\\repos\\v2\\Hospital FrontEnd\\Hospital FrontEnd\\Pages\\TreatmentPlanUpdate.razor",
+              "RelativeDocumentMoniker": "Pages\\TreatmentPlanUpdate.razor",
+              "ToolTip": "C:\\Users\\Jerome\\source\\repos\\v2\\Hospital FrontEnd\\Hospital FrontEnd\\Pages\\TreatmentPlanUpdate.razor",
+              "RelativeToolTip": "Pages\\TreatmentPlanUpdate.razor",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAwAgAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-31T22:37:08.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TreatmentPlanComponent.cs",
+              "DocumentMoniker": "C:\\Users\\Jerome\\source\\repos\\v2\\Hospital FrontEnd\\Hospital FrontEnd\\Components\\TreatmentPlanComponent.cs",
+              "RelativeDocumentMoniker": "Components\\TreatmentPlanComponent.cs",
+              "ToolTip": "C:\\Users\\Jerome\\source\\repos\\v2\\Hospital FrontEnd\\Hospital FrontEnd\\Components\\TreatmentPlanComponent.cs",
+              "RelativeToolTip": "Components\\TreatmentPlanComponent.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAowHwAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T17:26:32.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TreatmentPlanCreate.razor",
+              "DocumentMoniker": "C:\\Users\\Jerome\\source\\repos\\v2\\Hospital FrontEnd\\Hospital FrontEnd\\Pages\\TreatmentPlanCreate.razor",
+              "RelativeDocumentMoniker": "Pages\\TreatmentPlanCreate.razor",
+              "ToolTip": "C:\\Users\\Jerome\\source\\repos\\v2\\Hospital FrontEnd\\Hospital FrontEnd\\Pages\\TreatmentPlanCreate.razor",
+              "RelativeToolTip": "Pages\\TreatmentPlanCreate.razor",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-31T22:29:07.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TreatmentPlanService.cs",
+              "DocumentMoniker": "C:\\Users\\Jerome\\source\\repos\\v2\\Hospital FrontEnd\\Hospital FrontEnd\\Data\\TreatmentPlanService.cs",
+              "RelativeDocumentMoniker": "Data\\TreatmentPlanService.cs",
+              "ToolTip": "C:\\Users\\Jerome\\source\\repos\\v2\\Hospital FrontEnd\\Hospital FrontEnd\\Data\\TreatmentPlanService.cs",
+              "RelativeToolTip": "Data\\TreatmentPlanService.cs",
+              "ViewState": "AQIAAN4AAAAAAAAAAAAAADoAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T13:42:59.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddTestResult.razor",
+              "DocumentMoniker": "C:\\Users\\Jerome\\source\\repos\\v2\\Hospital FrontEnd\\Hospital FrontEnd\\Pages\\AddTestResult.razor",
+              "RelativeDocumentMoniker": "Pages\\AddTestResult.razor",
+              "ToolTip": "C:\\Users\\Jerome\\source\\repos\\v2\\Hospital FrontEnd\\Hospital FrontEnd\\Pages\\AddTestResult.razor",
+              "RelativeToolTip": "Pages\\AddTestResult.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-01T13:59:08.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StaffService.cs",
+              "DocumentMoniker": "C:\\Users\\Jerome\\source\\repos\\v2\\Hospital FrontEnd\\Hospital FrontEnd\\Data\\StaffService.cs",
+              "RelativeDocumentMoniker": "Data\\StaffService.cs",
+              "ToolTip": "C:\\Users\\Jerome\\source\\repos\\v2\\Hospital FrontEnd\\Hospital FrontEnd\\Data\\StaffService.cs",
+              "RelativeToolTip": "Data\\StaffService.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAACkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T23:22:19.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "StaffDirectory.razor",
+              "DocumentMoniker": "C:\\Users\\Jerome\\source\\repos\\v2\\Hospital FrontEnd\\Hospital FrontEnd\\Pages\\StaffDirectory.razor",
+              "RelativeDocumentMoniker": "Pages\\StaffDirectory.razor",
+              "ToolTip": "C:\\Users\\Jerome\\source\\repos\\v2\\Hospital FrontEnd\\Hospital FrontEnd\\Pages\\StaffDirectory.razor",
+              "RelativeToolTip": "Pages\\StaffDirectory.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-31T23:19:13.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UtilService.cs",
+              "DocumentMoniker": "C:\\Users\\Jerome\\source\\repos\\v2\\Hospital FrontEnd\\Hospital FrontEnd\\Data\\UtilService.cs",
+              "RelativeDocumentMoniker": "Data\\UtilService.cs",
+              "ToolTip": "C:\\Users\\Jerome\\source\\repos\\v2\\Hospital FrontEnd\\Hospital FrontEnd\\Data\\UtilService.cs",
+              "RelativeToolTip": "Data\\UtilService.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwB8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T21:37:21.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PatientService.cs",
+              "DocumentMoniker": "C:\\Users\\Jerome\\source\\repos\\v2\\Hospital FrontEnd\\Hospital FrontEnd\\Data\\PatientService.cs",
+              "RelativeDocumentMoniker": "Data\\PatientService.cs",
+              "ToolTip": "C:\\Users\\Jerome\\source\\repos\\v2\\Hospital FrontEnd\\Hospital FrontEnd\\Data\\PatientService.cs",
+              "RelativeToolTip": "Data\\PatientService.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAwwDgAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T12:12:48.507Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PatientEdit.razor",
+              "DocumentMoniker": "C:\\Users\\Jerome\\source\\repos\\v2\\Hospital FrontEnd\\Hospital FrontEnd\\Pages\\PatientEdit.razor",
+              "RelativeDocumentMoniker": "Pages\\PatientEdit.razor",
+              "ToolTip": "C:\\Users\\Jerome\\source\\repos\\v2\\Hospital FrontEnd\\Hospital FrontEnd\\Pages\\PatientEdit.razor",
+              "RelativeToolTip": "Pages\\PatientEdit.razor",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-01T12:56:09.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Jerome\\source\\repos\\v2\\Hospital FrontEnd\\Hospital FrontEnd\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Jerome\\source\\repos\\v2\\Hospital FrontEnd\\Hospital FrontEnd\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T23:32:59.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PatientComponent.cs",
+              "DocumentMoniker": "C:\\Users\\Jerome\\source\\repos\\v2\\Hospital FrontEnd\\Hospital FrontEnd\\Components\\PatientComponent.cs",
+              "RelativeDocumentMoniker": "Components\\PatientComponent.cs",
+              "ToolTip": "C:\\Users\\Jerome\\source\\repos\\v2\\Hospital FrontEnd\\Hospital FrontEnd\\Components\\PatientComponent.cs",
+              "RelativeToolTip": "Components\\PatientComponent.cs",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAUwFoAAABYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T22:01:46.657Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
