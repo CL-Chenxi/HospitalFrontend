@@ -1,0 +1,15 @@
+C:\Users\User\Desktop\My development\Delgates\bin\Debug\net7.0\Delgates.exe
+C:\Users\User\Desktop\My development\Delgates\bin\Debug\net7.0\Delgates.deps.json
+C:\Users\User\Desktop\My development\Delgates\bin\Debug\net7.0\Delgates.runtimeconfig.json
+C:\Users\User\Desktop\My development\Delgates\bin\Debug\net7.0\Delgates.dll
+C:\Users\User\Desktop\My development\Delgates\bin\Debug\net7.0\Delgates.pdb
+C:\Users\User\Desktop\My development\Delgates\obj\Debug\net7.0\Delgates.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\My development\Delgates\obj\Debug\net7.0\Delgates.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\My development\Delgates\obj\Debug\net7.0\Delgates.AssemblyInfo.cs
+C:\Users\User\Desktop\My development\Delgates\obj\Debug\net7.0\Delgates.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\My development\Delgates\obj\Debug\net7.0\Delgates.sourcelink.json
+C:\Users\User\Desktop\My development\Delgates\obj\Debug\net7.0\Delgates.dll
+C:\Users\User\Desktop\My development\Delgates\obj\Debug\net7.0\refint\Delgates.dll
+C:\Users\User\Desktop\My development\Delgates\obj\Debug\net7.0\Delgates.pdb
+C:\Users\User\Desktop\My development\Delgates\obj\Debug\net7.0\Delgates.genruntimeconfig.cache
+C:\Users\User\Desktop\My development\Delgates\obj\Debug\net7.0\ref\Delgates.dll

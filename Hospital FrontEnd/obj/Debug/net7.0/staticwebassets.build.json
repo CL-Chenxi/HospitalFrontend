@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8VZmlFT08Am8rzCnMt7pBXe58lXnNkHXLe1xnRj5UtE=",
+  "Hash": "jl9/q2y9dEr4p+niQgPc3SEoG5C2vAkdjBYLox/7pd0=",
   "Source": "HospitalFrontEnd",
   "BasePath": "_content/HospitalFrontEnd",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "HospitalFrontEnd\\wwwroot",
       "Source": "HospitalFrontEnd",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\My development\\Hospital\\Hospital FrontEnd Test\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\My development\\Hospital FrontEnd\\wwwroot\\",
       "BasePath": "_content/HospitalFrontEnd",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\User\\Desktop\\My development\\Hospital\\Hospital FrontEnd Test\\obj\\Debug\\net7.0\\scopedcss\\bundle\\HospitalFrontEnd.styles.css",
+      "Identity": "C:\\Users\\User\\Desktop\\My development\\Hospital FrontEnd\\obj\\Debug\\net7.0\\scopedcss\\bundle\\HospitalFrontEnd.styles.css",
       "SourceId": "HospitalFrontEnd",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\My development\\Hospital\\Hospital FrontEnd Test\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\My development\\Hospital FrontEnd\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
       "BasePath": "_content/HospitalFrontEnd",
       "RelativePath": "HospitalFrontEnd.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\User\\Desktop\\My development\\Hospital\\Hospital FrontEnd Test\\obj\\Debug\\net7.0\\scopedcss\\bundle\\HospitalFrontEnd.styles.css"
+      "OriginalItemSpec": "C:\\Users\\User\\Desktop\\My development\\Hospital FrontEnd\\obj\\Debug\\net7.0\\scopedcss\\bundle\\HospitalFrontEnd.styles.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\My development\\Hospital\\Hospital FrontEnd Test\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\HospitalFrontEnd.bundle.scp.css",
+      "Identity": "C:\\Users\\User\\Desktop\\My development\\Hospital FrontEnd\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\HospitalFrontEnd.bundle.scp.css",
       "SourceId": "HospitalFrontEnd",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\My development\\Hospital\\Hospital FrontEnd Test\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\My development\\Hospital FrontEnd\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/HospitalFrontEnd",
       "RelativePath": "HospitalFrontEnd.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\User\\Desktop\\My development\\Hospital\\Hospital FrontEnd Test\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\HospitalFrontEnd.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\User\\Desktop\\My development\\Hospital FrontEnd\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\HospitalFrontEnd.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\My development\\Hospital\\Hospital FrontEnd Test\\wwwroot\\app.css",
+      "Identity": "C:\\Users\\User\\Desktop\\My development\\Hospital FrontEnd\\wwwroot\\app.css",
       "SourceId": "HospitalFrontEnd",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\My development\\Hospital\\Hospital FrontEnd Test\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\My development\\Hospital FrontEnd\\wwwroot\\",
       "BasePath": "_content/HospitalFrontEnd",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\My development\\Hospital\\Hospital FrontEnd Test\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\User\\Desktop\\My development\\Hospital FrontEnd\\wwwroot\\bootstrap\\bootstrap.min.css",
       "SourceId": "HospitalFrontEnd",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\My development\\Hospital\\Hospital FrontEnd Test\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\My development\\Hospital FrontEnd\\wwwroot\\",
       "BasePath": "_content/HospitalFrontEnd",
       "RelativePath": "bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\My development\\Hospital\\Hospital FrontEnd Test\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\User\\Desktop\\My development\\Hospital FrontEnd\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "HospitalFrontEnd",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\My development\\Hospital\\Hospital FrontEnd Test\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\My development\\Hospital FrontEnd\\wwwroot\\",
       "BasePath": "_content/HospitalFrontEnd",
       "RelativePath": "bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\My development\\Hospital\\Hospital FrontEnd Test\\wwwroot\\favicon.png",
+      "Identity": "C:\\Users\\User\\Desktop\\My development\\Hospital FrontEnd\\wwwroot\\favicon.png",
       "SourceId": "HospitalFrontEnd",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\My development\\Hospital\\Hospital FrontEnd Test\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\My development\\Hospital FrontEnd\\wwwroot\\",
       "BasePath": "_content/HospitalFrontEnd",
       "RelativePath": "favicon.png",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.png"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\My development\\Hospital\\Hospital FrontEnd Test\\wwwroot\\floatingMenu.css",
+      "Identity": "C:\\Users\\User\\Desktop\\My development\\Hospital FrontEnd\\wwwroot\\floatingMenu.css",
       "SourceId": "HospitalFrontEnd",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\My development\\Hospital\\Hospital FrontEnd Test\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\My development\\Hospital FrontEnd\\wwwroot\\",
       "BasePath": "_content/HospitalFrontEnd",
       "RelativePath": "floatingMenu.css",
       "AssetKind": "All",

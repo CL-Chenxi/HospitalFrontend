@@ -1,0 +1,15 @@
+C:\Users\User\Desktop\My development\RadioPlayer\bin\Debug\net7.0\RadioPlayer.exe
+C:\Users\User\Desktop\My development\RadioPlayer\bin\Debug\net7.0\RadioPlayer.deps.json
+C:\Users\User\Desktop\My development\RadioPlayer\bin\Debug\net7.0\RadioPlayer.runtimeconfig.json
+C:\Users\User\Desktop\My development\RadioPlayer\bin\Debug\net7.0\RadioPlayer.dll
+C:\Users\User\Desktop\My development\RadioPlayer\bin\Debug\net7.0\RadioPlayer.pdb
+C:\Users\User\Desktop\My development\RadioPlayer\obj\Debug\net7.0\RadioPlayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\My development\RadioPlayer\obj\Debug\net7.0\RadioPlayer.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\My development\RadioPlayer\obj\Debug\net7.0\RadioPlayer.AssemblyInfo.cs
+C:\Users\User\Desktop\My development\RadioPlayer\obj\Debug\net7.0\RadioPlayer.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\My development\RadioPlayer\obj\Debug\net7.0\RadioPlayer.sourcelink.json
+C:\Users\User\Desktop\My development\RadioPlayer\obj\Debug\net7.0\RadioPlayer.dll
+C:\Users\User\Desktop\My development\RadioPlayer\obj\Debug\net7.0\refint\RadioPlayer.dll
+C:\Users\User\Desktop\My development\RadioPlayer\obj\Debug\net7.0\RadioPlayer.pdb
+C:\Users\User\Desktop\My development\RadioPlayer\obj\Debug\net7.0\RadioPlayer.genruntimeconfig.cache
+C:\Users\User\Desktop\My development\RadioPlayer\obj\Debug\net7.0\ref\RadioPlayer.dll

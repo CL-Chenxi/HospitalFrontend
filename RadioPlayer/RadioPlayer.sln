@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadioPlayer", "RadioPlayer.csproj", "{C72DF30A-3553-409A-8AD3-22997DF1BD75}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C72DF30A-3553-409A-8AD3-22997DF1BD75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C72DF30A-3553-409A-8AD3-22997DF1BD75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C72DF30A-3553-409A-8AD3-22997DF1BD75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C72DF30A-3553-409A-8AD3-22997DF1BD75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9FD4E65C-BFAB-49BE-9640-5D58E8FA6124}
+	EndGlobalSection
+EndGlobal

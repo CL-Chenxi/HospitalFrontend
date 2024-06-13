@@ -656,11 +656,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\My development\\Hospital\\Hospital FrontEnd Test\\HospitalFrontEnd.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\My development\\Hospital FrontEnd\\HospitalFrontEnd.csproj",
       "projectName": "HospitalFrontEnd",
-      "projectPath": "C:\\Users\\User\\Desktop\\My development\\Hospital\\Hospital FrontEnd Test\\HospitalFrontEnd.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\My development\\Hospital FrontEnd\\HospitalFrontEnd.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\My development\\Hospital\\Hospital FrontEnd Test\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\My development\\Hospital FrontEnd\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -9,75 +9,75 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Hospital FrontEnd
 build_property.RootNamespace = Hospital FrontEnd
-build_property.ProjectDir = C:\Users\User\Desktop\My development\Hospital\Hospital FrontEnd Test\
+build_property.ProjectDir = C:\Users\User\Desktop\My development\Hospital FrontEnd\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\User\Desktop\My development\Hospital\Hospital FrontEnd Test
+build_property.MSBuildProjectDirectory = C:\Users\User\Desktop\My development\Hospital FrontEnd
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/User/Desktop/My development/Hospital/Hospital FrontEnd Test/App.razor]
+[C:/Users/User/Desktop/My development/Hospital FrontEnd/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/My development/Hospital/Hospital FrontEnd Test/Pages/AddTestResult.razor]
+[C:/Users/User/Desktop/My development/Hospital FrontEnd/Pages/AddTestResult.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkVGVzdFJlc3VsdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/My development/Hospital/Hospital FrontEnd Test/Pages/DrugReference.razor]
+[C:/Users/User/Desktop/My development/Hospital FrontEnd/Pages/DrugReference.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRHJ1Z1JlZmVyZW5jZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/My development/Hospital/Hospital FrontEnd Test/Pages/Index.razor]
+[C:/Users/User/Desktop/My development/Hospital FrontEnd/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/My development/Hospital/Hospital FrontEnd Test/Pages/PatientCreate.razor]
+[C:/Users/User/Desktop/My development/Hospital FrontEnd/Pages/PatientCreate.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF0aWVudENyZWF0ZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/My development/Hospital/Hospital FrontEnd Test/Pages/PatientEdit.razor]
+[C:/Users/User/Desktop/My development/Hospital FrontEnd/Pages/PatientEdit.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF0aWVudEVkaXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/My development/Hospital/Hospital FrontEnd Test/Pages/PatientManagement.razor]
+[C:/Users/User/Desktop/My development/Hospital FrontEnd/Pages/PatientManagement.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF0aWVudE1hbmFnZW1lbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/My development/Hospital/Hospital FrontEnd Test/Pages/StaffDirectory.razor]
+[C:/Users/User/Desktop/My development/Hospital FrontEnd/Pages/StaffDirectory.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RhZmZEaXJlY3RvcnkucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/My development/Hospital/Hospital FrontEnd Test/Pages/TreatmentPlanCreate.razor]
+[C:/Users/User/Desktop/My development/Hospital FrontEnd/Pages/TreatmentPlanCreate.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHJlYXRtZW50UGxhbkNyZWF0ZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/My development/Hospital/Hospital FrontEnd Test/Pages/TreatmentPlanManagement.razor]
+[C:/Users/User/Desktop/My development/Hospital FrontEnd/Pages/TreatmentPlanManagement.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHJlYXRtZW50UGxhbk1hbmFnZW1lbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/My development/Hospital/Hospital FrontEnd Test/Pages/TreatmentPlanUpdate.razor]
+[C:/Users/User/Desktop/My development/Hospital FrontEnd/Pages/TreatmentPlanUpdate.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHJlYXRtZW50UGxhblVwZGF0ZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/My development/Hospital/Hospital FrontEnd Test/_Imports.razor]
+[C:/Users/User/Desktop/My development/Hospital FrontEnd/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/My development/Hospital/Hospital FrontEnd Test/Shared/MainLayout.razor]
+[C:/Users/User/Desktop/My development/Hospital FrontEnd/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-teiyh258vv
 
-[C:/Users/User/Desktop/My development/Hospital/Hospital FrontEnd Test/Shared/NavMenu.razor]
+[C:/Users/User/Desktop/My development/Hospital FrontEnd/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-jx2e11i5bh
 
-[C:/Users/User/Desktop/My development/Hospital/Hospital FrontEnd Test/Pages/Error.cshtml]
+[C:/Users/User/Desktop/My development/Hospital FrontEnd/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/My development/Hospital/Hospital FrontEnd Test/Pages/_Host.cshtml]
+[C:/Users/User/Desktop/My development/Hospital FrontEnd/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

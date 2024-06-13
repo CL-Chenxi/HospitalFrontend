@@ -1,0 +1,15 @@
+C:\Users\User\Desktop\My development\RadioV2\bin\Debug\net7.0\RadioV2.exe
+C:\Users\User\Desktop\My development\RadioV2\bin\Debug\net7.0\RadioV2.deps.json
+C:\Users\User\Desktop\My development\RadioV2\bin\Debug\net7.0\RadioV2.runtimeconfig.json
+C:\Users\User\Desktop\My development\RadioV2\bin\Debug\net7.0\RadioV2.dll
+C:\Users\User\Desktop\My development\RadioV2\bin\Debug\net7.0\RadioV2.pdb
+C:\Users\User\Desktop\My development\RadioV2\obj\Debug\net7.0\RadioV2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\My development\RadioV2\obj\Debug\net7.0\RadioV2.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\My development\RadioV2\obj\Debug\net7.0\RadioV2.AssemblyInfo.cs
+C:\Users\User\Desktop\My development\RadioV2\obj\Debug\net7.0\RadioV2.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\My development\RadioV2\obj\Debug\net7.0\RadioV2.sourcelink.json
+C:\Users\User\Desktop\My development\RadioV2\obj\Debug\net7.0\RadioV2.dll
+C:\Users\User\Desktop\My development\RadioV2\obj\Debug\net7.0\refint\RadioV2.dll
+C:\Users\User\Desktop\My development\RadioV2\obj\Debug\net7.0\RadioV2.pdb
+C:\Users\User\Desktop\My development\RadioV2\obj\Debug\net7.0\RadioV2.genruntimeconfig.cache
+C:\Users\User\Desktop\My development\RadioV2\obj\Debug\net7.0\ref\RadioV2.dll

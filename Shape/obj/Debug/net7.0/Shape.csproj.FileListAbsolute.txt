@@ -1,0 +1,15 @@
+C:\Users\User\Desktop\My development\Shape\bin\Debug\net7.0\Shape.exe
+C:\Users\User\Desktop\My development\Shape\bin\Debug\net7.0\Shape.deps.json
+C:\Users\User\Desktop\My development\Shape\bin\Debug\net7.0\Shape.runtimeconfig.json
+C:\Users\User\Desktop\My development\Shape\bin\Debug\net7.0\Shape.dll
+C:\Users\User\Desktop\My development\Shape\bin\Debug\net7.0\Shape.pdb
+C:\Users\User\Desktop\My development\Shape\obj\Debug\net7.0\Shape.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\My development\Shape\obj\Debug\net7.0\Shape.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\My development\Shape\obj\Debug\net7.0\Shape.AssemblyInfo.cs
+C:\Users\User\Desktop\My development\Shape\obj\Debug\net7.0\Shape.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\My development\Shape\obj\Debug\net7.0\Shape.sourcelink.json
+C:\Users\User\Desktop\My development\Shape\obj\Debug\net7.0\Shape.dll
+C:\Users\User\Desktop\My development\Shape\obj\Debug\net7.0\refint\Shape.dll
+C:\Users\User\Desktop\My development\Shape\obj\Debug\net7.0\Shape.pdb
+C:\Users\User\Desktop\My development\Shape\obj\Debug\net7.0\Shape.genruntimeconfig.cache
+C:\Users\User\Desktop\My development\Shape\obj\Debug\net7.0\ref\Shape.dll
