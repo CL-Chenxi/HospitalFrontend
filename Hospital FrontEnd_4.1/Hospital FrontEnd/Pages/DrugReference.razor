@@ -1,0 +1,159 @@
+﻿@page "/drugreference"
+@using HospitalFrontEnd.Components
+@using HospitalFrontEnd.Data
+@inherits DrugComponent
+
+<h1>Drug Reference</h1>
+<div style=" width: 100%; display: table;">
+    <div style=" display: table-row;">
+        <div style="width: 50%; display: table-cell;">
+            <table>
+                @if (DrugList != null)
+                {
+                    <tr>
+                        <th>ID<EditForm Model="DrugList" OnValidSubmit="SortById"><button class="btn" type="submit">S</button></EditForm></th>
+                        <th>Name<EditForm Model="DrugList" OnValidSubmit="SortByName"><button class="btn" type="submit">S</button></EditForm></th>
+                        <th>Dosage</th>
+                        <th>Allergies</th>
+                        <th>Status</th>
+                        <th></th>
+                    </tr>
+                    @foreach (var drug in DrugList)
+                    {
+                        <tr>
+                            <td>@drug.Drug_ID</td>
+                            <td>@drug.Drug_Name</td>
+                            <td>@drug.Drug_Dosage</td>
+                            <td>@drug.Drug_AllergyList</td>
+                            <td>
+                                @if (drug.Drug_Available)
+                                {
+                                    <i>Available</i>
+                                } else
+                                {
+                                    <i>Unavailable</i>
+                                }
+                            </td>
+                            <td>
+                                <EditForm Model="DrugList" OnValidSubmit="@(() => Edit(@drug.Drug_ID))"><button class="btn" type="submit">Edit</button></EditForm>
+                            </td>
+                        </tr>
+                    }
+                }
+            </table>
+        </div>
+        <div style="display: table-cell; margin-left: 10%; vertical-align:top">
+
+                <table>
+                    <tr>
+                        <td colspan="2">
+                        <h3>Add new Drug</h3>
+                        <EditForm Model="@CreateDrugForm" OnValidSubmit="Create">
+                            <table>
+                                <tr><td><label>Name</label></td><td><InputText @bind-Value="CreateDrugForm.Drug_Name" /></td></tr>
+                                <tr><td><label>Dosage</label></td><td><InputText @bind-Value="CreateDrugForm.Drug_Dosage" /></td></tr>
+                                <tr><td><label>Allergies</label></td><td><InputText @bind-Value="CreateDrugForm.Drug_Allergies" /></td></tr>
+                            </table>
+                            <button class="btn" type="submit">Create</button>
+                        </EditForm>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                        @if (feedbackCreate.Length > 0)
+                        {
+                            <p>@feedbackCreate</p>
+                        }
+                        </td>
+                    </tr>
+                @if (displayable)
+                {
+                    <tr>
+                        <td colspan="2">
+                            <h3>Edit</h3>
+                            <EditForm Model="UpdateDrugForm" OnValidSubmit="Update">
+                                <table>
+                                    <tr><td>Drug ID</td><td>@SelectedDrugId</td></tr>
+                                    <tr><td>Name</td><td><InputText id="fname" @bind-Value="UpdateDrugForm.Drug_Name" /></td></tr>
+                                    <tr><td>Dosage</td><td><InputText id="lname" @bind-Value="UpdateDrugForm.Drug_Dosage" /></td></tr>
+                                    <tr><td>Allergies</td><td><InputText id="phone" @bind-Value="UpdateDrugForm.Drug_Allergies" /></td></tr>
+                                </table>
+                                <button class="btn" type="submit">Update</button>
+                            </EditForm>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <EditForm Model="UpdateDrugForm" OnValidSubmit="Delete">
+                                <button class="btn" type="submit">Delete</button>
+                            </EditForm>
+                        </td>
+                        <td>
+                            <EditForm Model="UpdateDrugForm" OnValidSubmit="@(() => UpdateDrugStatus())">
+                                <button class="btn" type="submit">
+                                    @if (SelectedDrugStatus)
+                                    {
+                                        <b>Deactivate</b>
+                                    }
+                                    else
+                                    {
+                                        <b>Reactivate</b>
+                                    }
+                                </button>
+                            </EditForm>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                                @if (feedbackUpdate.Length > 0)
+                                {
+                                    <p>@feedbackUpdate</p>
+                                }
+                        </td>
+                    </tr>
+                    }
+                </table>
+        </div>
+    </div>
+</div>
+
+@code {
+
+    //fetch data on page load
+    protected override async Task OnInitializedAsync()
+    {
+        DrugList = await DrugService.GetDrugList();
+    }
+
+    private void Edit(int drug_id)
+    {
+        DrugDto drug = DrugList.First(d => d.Drug_ID == drug_id);
+        if(drug != null)
+        {
+            SelectedDrugId = drug.Drug_ID;
+            UpdateDrugForm.Drug_Name = drug.Drug_Name;
+            UpdateDrugForm.Drug_Dosage = drug.Drug_Dosage;
+            UpdateDrugForm.Drug_Allergies = drug.Drug_AllergyList;
+            SelectedDrugStatus = drug.Drug_Available;
+            displayable = true; 
+        } else
+        {
+            displayable = false;
+            UpdateDrugForm = new CreateOrUpdateDrugForm();
+            SelectedDrugId = -1;
+        }
+
+    }
+
+    private void SortById()
+    {
+        if (DrugList != null) DrugList = DrugList.OrderBy(p => p.Drug_ID);
+    }
+
+    private void SortByName()
+    {
+        if (DrugList != null) DrugList = DrugList.OrderBy(p => p.Drug_Name);
+    }
+
+}

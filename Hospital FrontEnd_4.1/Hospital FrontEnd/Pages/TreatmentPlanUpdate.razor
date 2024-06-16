@@ -1,0 +1,187 @@
+﻿@page "/treatmentplanupdate"
+@using HospitalFrontEnd.Data
+@using HospitalFrontEnd.Components
+@inherits TreatmentPlanComponent
+
+
+<h1>Manage treatment plan</h1>
+
+<div style=" width: 100%; display: table;">
+    <div style=" display: table-row;">
+        <div style="width: 50%; display: table-cell;">
+
+            <table>
+                <tr>
+                    <td>
+                        <EditForm Model="@patientList" OnValidSubmit="GetAllPlansForPatients">
+                            <InputSelect @bind-Value="@TreatmentPlanPatientId">
+                                @foreach (var patient in patientList)
+                                {
+                                    <option value="@patient.Patient_ID">@patient.Patient_fName @patient.Patient_lName</option>
+                                }
+                            </InputSelect>
+                            <button class="btn btn-primary" type="submit">Get Plans</button>
+                        </EditForm>
+                        @if (planList.Count() > 0)
+                        {
+                            <table>
+                                <tr><th>ID</th><th>Date</th><th>Created by</th><th></th></tr>
+                                @foreach (var plan in planList)
+                                {
+                                    <tr>
+                                        <td>@plan.Plan_ID</td>
+                                        <td>@plan.Plan_Date</td>
+                                        <td>@plan.staff.Staff_lName</td>
+                                        <td>
+                                            <EditForm Model="@plan" OnValidSubmit="@(() => SelectPlan(plan.Plan_ID))"><button class="btn" type="submit">Select</button></EditForm>
+                                        </td>
+                                    </tr>
+                                }
+                            </table>
+                        }
+                    </td>
+                    <td>
+                        <EditForm Model="@EditTreatmentPlanForm" OnValidSubmit="GetTreatmentPlanById">
+                            <table>
+                                <tr><td><label for="plan_id">Plan ID</label></td><td><InputNumber id="plan_id" @bind-Value="TreatmentPlanSearchId" /></td></tr>
+                                <button class="btn btn-primary" type="submit">Get</button>
+                            </table>
+
+                        </EditForm>
+                    </td>
+                </tr>
+
+            </table>
+
+            @if (displayable)
+            {
+                <h3>Treatment Plan ID #@TreatmentPlanDto?.Plan_ID</h3>
+                <table>
+                    <tr><td>Created by:</td><td>@TreatmentPlanDto?.staff.Staff_fName @TreatmentPlanDto?.staff.Staff_lName (#@TreatmentPlanDto?.staff.Staff_ID)</td></tr>
+                    <tr><td>Patient:</td><td>@TreatmentPlanDto?.patient.Patient_fName @TreatmentPlanDto?.patient.Patient_lName (#@TreatmentPlanDto?.patient.Patient_ID)</td></tr>
+                    <tr><td>Starting date</td><td>@TreatmentPlanDto.Plan_Date</td></tr>
+                    <tr><td>Cycle Length</td><td>@TreatmentPlanDto.Plan_Cycle</td></tr>
+                    <tr><td>Status</td><td>@TreatmentPlanDto.Plan_Status</td></tr>
+                    <tr><td>Comment</td><td>@TreatmentPlanDto.Plan_Observation</td></tr>
+                </table>
+                <h3>History</h3>
+                <table>
+                    <tr><th>Entry ID</th><th>Date</th><th>Type</th><th>Drug</th><th>Posology</th><th>Comment</th><th>link</th></tr>
+                    @foreach (var entry in entryList)
+                    {
+                        <tr>
+                            <td>@entry.Entry_ID</td>
+                            <td>@entry.Last_Update</td>
+                            <td>@entry.Entry_Type</td>
+                            <td>@entry.Drug?.Drug_Name @entry.Drug?.Drug_Dosage</td>
+                            <td>@entry.Posology</td>
+                            <td>@entry.Comment</td>
+                            <td>@entry.Upload_Link</td>
+                        </tr>
+                    }
+                </table>
+            }
+        </div>
+        <div style="display: table-cell; margin-left: 10%; vertical-align:top">
+            @if (TreatmentPlanDto != null)
+            {
+                <h3>Update</h3>
+                <EditForm Model="@EditTreatmentPlanForm" OnValidSubmit="Update">
+                    <table>
+                        <tr><td>Status</td>
+                            <td>
+                                <InputSelect @bind-Value="@EditTreatmentPlanForm.Plan_Status">
+                                    @foreach(var stat in _statusList)
+                                    {
+                                        <option value="@stat">@stat</option>
+                                    }
+                                </InputSelect>
+                            </td>
+                        </tr>
+                        <tr><td>Cycle Length</td><td><InputNumber @bind-Value="@EditTreatmentPlanForm.Plan_CycleLen" /></td></tr>
+                        <tr><td>Comment</td><td><InputTextArea @bind-Value="@EditTreatmentPlanForm.Plan_Observation" /></td></tr>
+                    </table>
+                    <button class="btn btn-primary" type="submit">Update</button>
+                </EditForm>
+                <EditForm Model="@EditTreatmentPlanForm" OnValidSubmit="Delete">
+                    <button class="btn btn-primary" type="submit">Delete this plan</button>
+                </EditForm>
+                <h3>Prescribe</h3>
+                <EditForm Model="@PrescriptionForm" OnValidSubmit="AddPrescription">
+                    <table>
+                        <tr>
+                            <td><label>Drug Id</label></td>
+                            <td>
+                                <InputSelect @bind-Value="@PrescriptionForm.Drug_ID">
+                                    @foreach(var drug in drugList)
+                                    {
+                                        <option value="@drug.Drug_ID">@drug.Drug_Name</option>
+                                    }
+                                </InputSelect>
+                            </td>
+                        </tr>
+                        <tr><td><label>Posology</label></td><td><InputText @bind-Value="@PrescriptionForm.Posology"/></td></tr>
+                        <tr><td><label>Comment</label></td><td><InputText @bind-Value="@PrescriptionForm.Comment"/></td></tr>
+                    </table>
+                    <button class="btn btn-primary" type="submit">Add</button>
+                </EditForm>
+                <h3>Add test</h3>
+                <EditForm Model="@ScheduleTestForm" OnValidSubmit="AddTest">
+                    <table>
+                    <tr><td><label>Test type</label></td>
+                        <td>
+                            <InputSelect @bind-Value="@ScheduleTestForm.EntryType">
+                                    @foreach(var type in _typeList)
+                                    {
+                                        <option value="@type">@type</option>
+                                    }
+                            </InputSelect>
+                        </td>
+                    </tr>
+                    <tr><td><label>Comment</label></td><td><InputText @bind-Value="@ScheduleTestForm.Comment" /></td></tr>
+                    </table>
+                <button class="btn btn-primary" type="submit">Add</button>
+                </EditForm>
+                @if (feedbackUpdate.Length > 0)
+                {
+                    <p>@feedbackUpdate</p>
+                }
+            }
+        </div>
+        
+    </div>
+</div>
+
+
+
+@code {
+    //this code load the status list to display within the form
+    private IEnumerable<string> _typeList = new List<string>();
+    private IEnumerable<string> _statusList = new List<string>();
+
+    [Inject]
+    private UtilService ApiService { get; set; }
+
+    //fetch data on page load
+    protected override async Task OnInitializedAsync()
+    {
+        _typeList = await ApiService.GetEntryTypeList();
+        if (_typeList != null) _typeList = _typeList.Where(t => t != "PRESCRIPTION");
+        _statusList = await ApiService.GetStatusList();
+
+        staffList = await StaffService.GetStaffList();
+        if (staffList != null) staffList.Where(st => st.Staff_Active);
+        drugList = await DrugService.GetDrugList();
+        if (drugList != null) drugList = drugList.Where(dr => dr.Drug_Available);
+
+        patientList = await PatientService.GetPatientList();
+    }
+
+    protected async Task SelectPlan(int plan_id)
+    {
+        TreatmentPlanSearchId = plan_id;
+        await GetTreatmentPlanById();
+    }
+
+}
+

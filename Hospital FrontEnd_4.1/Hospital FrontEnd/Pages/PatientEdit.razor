@@ -1,0 +1,169 @@
+﻿@page "/patientedit"
+@using HospitalFrontEnd.Data
+@using HospitalFrontEnd.Components
+@inherits PatientComponent
+
+<h1>Edit Patient</h1>
+
+
+<div style=" width: 100%; display: table;">
+    <div style=" display: table-row;">
+        <div style="width: 50%; display: table-cell;">
+            <table>
+                <tr>
+                    <td>
+                        <h3>Search Patient</h3>
+                        <EditForm Model="@SearchPatientForm" OnValidSubmit="Search">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <label for="sfname">First name</label>
+                                        <InputText id="sfname" @bind-Value="@SearchPatientForm.Patient_fName" />
+                                    </td>
+                                    <td>
+                                        <label for="slname">Last name</label>
+                                        <InputText id="slname" @bind-Value="@SearchPatientForm.Patient_lName" />
+                                    </td>
+                                    <td>
+                                        <label for="sid">ID</label>
+                                        <InputNumber id="sid" @bind-Value="@SearchPatientForm.Patient_Id" />
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-primary" type="submit">Search</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </EditForm>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @if (searchResultList != null)
+                        {
+                            <table class="table table-sm table-striped table-bordered m-2">
+                                <tr>
+                                    <th>ID<EditForm Model="@searchResultList" OnValidSubmit="SortById"><button class="btn" type="submit">S</button></EditForm></th>
+                                    <th>First Name<EditForm Model="@searchResultList" OnValidSubmit="SortByFirstName"><button class="btn" type="submit">S</button></EditForm></th>
+                                    <th>Last Name<EditForm Model="@searchResultList" OnValidSubmit="SortByLastName"><button class="btn" type="submit">S</button></EditForm></th>
+                                    <th>Date of Birth</th>
+                                    <th>Phone Number</th>
+                                    <th>Allergy</th>
+                                    <th></th>
+                                </tr>
+                                @foreach (var item in searchResultList)
+                                {
+                                    <tr>
+                                        <td>@item.Patient_ID</td>
+                                        <td>@item.Patient_fName</td>
+                                        <td>@item.Patient_lName</td>
+                                        <td>@item.Patient_DoB</td>
+                                        <td>@item.Patient_PhoneNum</td>
+                                        <td>@item.Patient_Allergy</td>
+                                        <td>
+                                            <EditForm Model="@searchResultList" OnValidSubmit="@(() => Edit(item.Patient_ID))"><button class="btn" type="submit">Edit</button></EditForm>
+                                        </td>
+                                    </tr>
+                                    //<tr>next line,   <td>standard table cell
+                                }
+                            </table>
+                        }
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @if (feedbackSearch.Length != 0)
+                        {
+                            <p>@feedbackSearch</p>
+                        }
+                    </td>
+                </tr>
+            
+            
+
+            </table>
+
+        </div>
+        <div style="display: table-cell; margin-left: 10%; vertical-align:top">
+            
+            @if (displayable)
+            {
+                <table>
+                    <tr>
+                        <td>
+                            <h3>Edit Patient</h3>
+                            <EditForm Model="@EditPatientForm" OnValidSubmit="Update">
+                                <table>
+                                    <tr><td><label for="fname">First Name</label></td><td><InputText id="fname" @bind-Value="EditPatientForm.Patient_fName" /></td></tr>
+                                    <tr><td><label for="lname">Last Name</label></td><td><InputText id="lname" @bind-Value="EditPatientForm.Patient_lName" /></td></tr>
+                                    <tr><td><label for="dob">DOB</label></td><td><InputDate id="dob" @bind-Value="EditPatientForm.Patient_DoB" /></td></tr>
+                                    <tr><td><label for="phonenumber">Phone Number</label></td><td><InputText id="phonenumber" @bind-Value="EditPatientForm.Patient_PhoneNum" /></td></tr>
+                                    <tr><td><label for="allergy">Allergy</label></td><td><InputText id="allergy" @bind-Value="EditPatientForm.Patient_Allergy" /></td></tr>
+                                </table>
+                                <button class="btn btn-primary" type="submit">Update</button>
+                            </EditForm>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <EditForm Model="@EditPatientForm" OnValidSubmit="Delete"><button class="btn btn-primary" type="submit">Delete</button></EditForm>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @if (feedbackUpdate.Length != 0)
+                            {
+                                <p>@feedbackUpdate</p>
+                            }
+                        </td>
+                    </tr>
+                </table>
+            }
+
+        </div>
+    </div>
+</div>
+
+@code{
+    private void Edit(int pId)
+    {
+        PatientDto patient = searchResultList.First(p => p.Patient_ID == pId);
+        if(patient != null)
+        {
+            PatientSearchId = patient.Patient_ID;
+            EditPatientForm.Patient_fName = patient.Patient_fName;
+            EditPatientForm.Patient_lName = patient.Patient_lName;
+            EditPatientForm.Patient_DoB = patient.Patient_DoB;
+            EditPatientForm.Patient_PhoneNum = patient.Patient_PhoneNum;
+            EditPatientForm.Patient_Allergy = patient.Patient_Allergy;
+            displayable = true;
+        } else
+        {
+            displayable = false;
+            EditPatientForm = new EditOrCreatePatientForm();
+            PatientSearchId = -1;
+        }
+    }
+
+    private void SortByLastName()
+    {
+        if (searchResultList != null)
+        {
+            searchResultList = searchResultList.OrderBy(p => p.Patient_lName);
+        }
+    }
+    private void SortByFirstName()
+    {
+        if (searchResultList != null)
+        {
+            searchResultList = searchResultList.OrderBy(p => p.Patient_fName);
+        }
+    }
+    private void SortById()
+    {
+        if (searchResultList != null)
+        {
+            searchResultList = searchResultList.OrderBy(p => p.Patient_ID);
+        }
+    }
+
+}

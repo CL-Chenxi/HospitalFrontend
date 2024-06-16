@@ -1,0 +1,51 @@
+﻿@page "/treatmentplancreate"
+@using HospitalFrontEnd.Data
+@using HospitalFrontEnd.Components
+@inherits TreatmentPlanComponent
+
+
+<h1>Create new treatment plan</h1>
+
+<EditForm Model="@CreateTreatmentPlanForm" OnValidSubmit="Create">
+    <table>
+        <tr><td><label for="patient_id">Patient</label></td>
+            <td>
+                <InputSelect id="patient_id" @bind-Value="CreateTreatmentPlanForm.Patient_Id">
+                    @foreach (var patient in patientList)
+                    {
+                        <option value="@patient.Patient_ID">@patient.Patient_fName @patient.Patient_lName</option>
+                    }
+                </InputSelect>
+            </td>
+        </tr>
+        <tr><td><label for="patient_id">Staff</label></td>
+            <td>
+                <InputSelect id="staff_id" @bind-Value="CreateTreatmentPlanForm.Staff_Id">
+                @foreach (var staff in staffList)
+                {
+                    <option value="@staff.Staff_ID">@staff.Staff_fName @staff.Staff_lName</option>
+                }
+                </InputSelect>
+            </td>
+         </tr>
+        <tr><td><label for="date">Creation Date</label></td><td>@CreateTreatmentPlanForm.Plan_Date</td></tr>
+        <tr><td><label for="status">Status</label></td><td>@CreateTreatmentPlanForm.Plan_Status</td></tr>
+        <tr><td><label for="cycle">Cycle length</label></td><td><InputNumber id="cycle" @bind-Value="CreateTreatmentPlanForm.Plan_CycleLen"></InputNumber></td></tr>
+        <tr><td><label for="comment">Comment</label></td><td><InputTextArea id="comment" @bind-Value=CreateTreatmentPlanForm.Plan_Observation></InputTextArea> </td></tr>
+    </table>
+    <button class="btn btn-primary" type="submit">Create</button>
+    @if (feedbackCreation.Length != 0)
+    {
+        <p>@feedbackCreation</p>
+    }
+</EditForm>
+
+@code{
+    //fetch data on page load
+    protected override async Task OnInitializedAsync()
+    {
+        patientList = await PatientService.GetPatientList();
+        staffList = await StaffService.GetStaffList();
+        if(staffList != null) staffList = staffList.Where(st => st.Staff_Active);
+    }
+}

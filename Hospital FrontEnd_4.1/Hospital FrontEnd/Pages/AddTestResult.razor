@@ -1,0 +1,84 @@
+﻿@page "/addtestresult"
+@using HospitalFrontEnd.Data
+@using HospitalFrontEnd.Components
+@inherits TreatmentPlanComponent
+
+<h3>Update Plan Entry</h3>
+<table>
+    <tr>
+        <td>
+            <EditForm Model="@UpdateEntryForm" OnValidSubmit="GetEntryByID">
+                <table>
+                    <tr><td><label>Entry Reference ID</label></td><td><InputNumber @bind-Value="@SelectedEntryId"/></td><td><button class="btn" type="submit">Get</button></td></tr>
+                </table>
+            </EditForm>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            @if (feedbackSearch.Length > 0)
+            {
+                <p>@feedbackSearch</p>
+            }
+        </td>
+    </tr>
+    <tr>
+        <td>
+            @if(displayable)
+            {
+                <table>
+                    <tr>
+                        <td>
+                            <EditForm Model="@UpdateEntryForm" OnValidSubmit="UpdateEntry">
+                                <table>
+                                    <tr><td><label>Reference ID</label></td><td>"Entry #@TreatmentEntryDto.Entry_ID of Plan #@TreatmentEntryDto.Plan_ID"</td></tr>
+                                    <tr><td><label>Type</label></td><td>@TreatmentEntryDto.Entry_Type</td></tr>
+                                    <tr><td><label>Last Updated</label></td><td>@TreatmentEntryDto.Last_Update</td></tr>
+                                    @if (TreatmentEntryDto.Drug != null)
+                                    {
+                                        <tr><td><label>Drug</label></td><td>@TreatmentEntryDto.Drug.Drug_Name @TreatmentEntryDto.Drug.Drug_Dosage, @TreatmentEntryDto.Posology</td></tr>
+                                    }
+                                    <tr><td><label>Staff ID</label></td><td><InputNumber @bind-Value="@UpdateEntryForm.Staff_ID" /></td></tr>
+                                    <tr><td><label>Link</label></td><td><InputText @bind-Value="@UpdateEntryForm.UploadLink" /></td></tr>
+                                    <tr><td><label>Comment</label></td><td><InputText @bind-Value="@UpdateEntryForm.Comment" /></td></tr>
+                                </table>
+                                <button class="btn btn-primary" type="submit">Update</button>
+                            </EditForm>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <EditForm Model="@SelectedEntryId" OnValidSubmit="DeleteEntry">
+                                <button class="btn btn-primary" type="submit">Delete Entry</button>
+                            </EditForm>
+                        </td>
+                    </tr>
+                </table>
+
+            }
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            @if (feedbackUpdate.Length > 0)
+            {
+                <p>@feedbackUpdate</p>
+            }
+        </td>
+    </tr>
+
+
+
+
+
+</table>
+
+@code {
+    //fetch data on page load
+    protected override async Task OnInitializedAsync()
+    {
+        staffList = await StaffService.GetStaffList();
+        if (staffList != null) staffList.Where(st => st.Staff_Active);
+    }
+}

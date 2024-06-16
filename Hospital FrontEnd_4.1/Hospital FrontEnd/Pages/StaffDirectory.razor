@@ -1,0 +1,175 @@
+﻿@page "/staffdirectory"
+@using HospitalFrontEnd.Data
+@using HospitalFrontEnd.Components
+@inherits StaffComponent
+
+<h1>Staff Directory</h1>
+
+<div style=" width: 100%; display: table;">
+    <div style=" display: table-row;">
+        <div style="width: 50%; display: table-cell;">
+            <table>
+                @if(StaffList != null)
+                {
+                    <tr>
+                        <th>ID<EditForm Model="@StaffList" OnValidSubmit="SortById"><button class="btn" type="submit">S</button></EditForm></th>
+                        <th>Name<EditForm Model="@StaffList" OnValidSubmit="SortByLastName"><button class="btn" type="submit">S</button></EditForm></th>
+                        <th>Grade</th>
+                        <th>Phone num</th>
+                        <th>Status</th>
+                        <th></th>
+                    </tr>
+                    @foreach(var staff in StaffList)
+                    {
+                        <tr>
+                            <td>@staff.Staff_ID</td>
+                            <td>@staff.Staff_fName @staff.Staff_lName</td>
+                            <td>@staff.Staff_Grade</td>
+                            <td>@staff.Staff_PhoneNum</td>
+                            <td>
+                                @if (staff.Staff_Active)
+                                {
+                                    <i>Active</i>
+                                } else
+                                {
+                                    <i>Former</i>
+                                }
+                            </td>
+                            <td><EditForm Model="StaffList" OnValidSubmit="@(() => Edit(@staff.Staff_ID))"><button class="btn" type="submit">Edit</button></EditForm></td>
+                        </tr>
+                    }
+                }
+            </table>
+        </div>
+        <div style="display: table-cell; margin-left: 10%; vertical-align:top">
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            <h3>Add new staff</h3>
+                            <EditForm Model="@CreateStaffForm" OnValidSubmit="Create">
+                                <table>
+                                <tr><td><label>First Name</label></td><td><InputText @bind-Value="CreateStaffForm.Staff_fName" /></td></tr>
+                                <tr><td><label>Last Name</label></td><td><InputText @bind-Value="CreateStaffForm.Staff_lName" /></td></tr>
+                                <tr><td><label>Phone Number</label></td><td><InputText @bind-Value="CreateStaffForm.Staff_Phone" /></td></tr>
+                                <tr><td><label>Grade</label></td>
+                                    <td>
+                                        <InputSelect @bind-Value="CreateStaffForm.Staff_Grade">
+                                            @foreach (var gr in Grades)
+                                            {
+                                                <option value="@gr">@gr</option>
+                                            }
+                                        </InputSelect>
+                                    </td>
+                                </tr>
+                                </table>
+                                <button class="btn" type="submit">Create</button>
+                            </EditForm>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                        @if (feedbackCreate.Length > 0)
+                        {
+                            <p>@feedbackCreate</p>
+                        }
+                        </td>
+                    </tr>
+                @if (displayable)
+                {
+                    <tr>
+                        <td colspan="2">
+                            <h3>Edit</h3>
+                            <EditForm Model="UpdateStaffForm" OnValidSubmit="Update">
+                                <table>
+                                    <tr><td>Staff ID</td><td>@SelectedStaffId</td></tr>
+                                    <tr><td>First Name</td><td><InputText id="fname" @bind-Value="UpdateStaffForm.Staff_fName"/></td></tr>
+                                    <tr><td>Last Name</td><td><InputText id="lname" @bind-Value="UpdateStaffForm.Staff_lName" /></td></tr>
+                                    <tr><td>Phone Number</td><td><InputText id="phone" @bind-Value="UpdateStaffForm.Staff_Phone" /></td></tr>
+                                    <tr><td>Grade</td>
+                                        <td>
+                                        <InputSelect id="grade" @bind-Value="UpdateStaffForm.Staff_Grade">
+                                                @foreach (var gr in Grades)
+                                                {
+                                                    <option value="@gr">@gr</option>
+                                                }
+                                        </InputSelect>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <button class="btn" type="submit">Update</button>
+                            </EditForm>                     
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <EditForm Model="UpdateStaffForm" OnValidSubmit="Delete">
+                                <button class="btn" type="submit">Delete</button>
+                            </EditForm>
+                        </td>
+                        <td>
+                            <EditForm Model="UpdateStaffForm" OnValidSubmit="@(() => UpdateStaffStatus(!StaffStatus))">
+                                <button class="btn" type="submit">
+                                    @if (StaffStatus)
+                                    {
+                                        <b>Retire</b>
+                                    } else
+                                    {
+                                        <b>Reactivate</b>
+                                    }
+                                </button>
+                            </EditForm>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            @if (feedbackUpdate.Length > 0)
+                            {
+                                <p>@feedbackUpdate</p>
+                            }
+                        </td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+</div>
+
+
+@code {
+    //fetch data on page load
+    protected override async Task OnInitializedAsync()
+    {
+        //GetStaffList();
+        StaffList = await StaffService.GetStaffList();
+        //if (StaffList != null) StaffList = StaffList.Where(s => s.Staff_Active);
+    }
+
+    private void Edit(int staff_id)
+    {
+        StaffDto staff = StaffList.First(s => s.Staff_ID == staff_id);
+        if(staff != null)
+        {
+            SelectedStaffId = staff.Staff_ID;
+            UpdateStaffForm.Staff_fName = staff.Staff_fName;
+            UpdateStaffForm.Staff_lName = staff.Staff_lName;
+            UpdateStaffForm.Staff_Phone = staff.Staff_PhoneNum;
+            UpdateStaffForm.Staff_Grade = staff.Staff_Grade;
+            StaffStatus = staff.Staff_Active;
+            displayable = true;
+        } else
+        {
+            displayable = false;
+            SelectedStaffId = -1;
+            UpdateStaffForm = new CreateOrUpdateStaffForm();
+        }
+    }
+
+    private void SortByLastName()
+    {
+        if (StaffList != null) StaffList = StaffList.OrderBy(p => p.Staff_lName);
+    }
+    private void SortById()
+    {
+        if (StaffList != null) StaffList = StaffList.OrderBy(p => p.Staff_ID);
+    }
+}
